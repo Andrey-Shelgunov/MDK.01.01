@@ -35,7 +35,7 @@
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(54, 64);
+            this.treeView1.Location = new System.Drawing.Point(425, 104);
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(302, 282);
             this.treeView1.TabIndex = 0;
@@ -43,7 +43,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(424, 64);
+            this.dataGridView1.Location = new System.Drawing.Point(38, 93);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(354, 282);
             this.dataGridView1.TabIndex = 1;
