@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyLibirary.Models
+namespace MyLibrary
 {
-    class Games
+    public class Class1
     {
     }
 }
