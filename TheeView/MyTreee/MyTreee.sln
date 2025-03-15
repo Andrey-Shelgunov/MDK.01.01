@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTreeView", "MyTreeView\My
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibrary", "Новая папка\MyLibrary\MyLibrary.csproj", "{99C8BB5B-101A-433A-9F14-5677E5AE4BFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindinList", "..\Новая папка\BindinList\BindinList.csproj", "{C6EC814A-2F27-4190-9CB1-383FF7444AE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{99C8BB5B-101A-433A-9F14-5677E5AE4BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99C8BB5B-101A-433A-9F14-5677E5AE4BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99C8BB5B-101A-433A-9F14-5677E5AE4BFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6EC814A-2F27-4190-9CB1-383FF7444AE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6EC814A-2F27-4190-9CB1-383FF7444AE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6EC814A-2F27-4190-9CB1-383FF7444AE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6EC814A-2F27-4190-9CB1-383FF7444AE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
