@@ -34,10 +34,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button_AddToZakaz = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // listBox_groups
             // 
+            this.listBox_groups.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.listBox_groups.FormattingEnabled = true;
             this.listBox_groups.Location = new System.Drawing.Point(24, 50);
             this.listBox_groups.Name = "listBox_groups";
@@ -46,14 +49,19 @@
             // 
             // SelectionPanel_flowLayoutPanel
             // 
-            this.SelectionPanel_flowLayoutPanel.Location = new System.Drawing.Point(219, 50);
+            this.SelectionPanel_flowLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.SelectionPanel_flowLayoutPanel.Location = new System.Drawing.Point(239, 50);
             this.SelectionPanel_flowLayoutPanel.Name = "SelectionPanel_flowLayoutPanel";
             this.SelectionPanel_flowLayoutPanel.Size = new System.Drawing.Size(200, 100);
             this.SelectionPanel_flowLayoutPanel.TabIndex = 1;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(489, 50);
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.Location = new System.Drawing.Point(503, 50);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(234, 284);
             this.richTextBox1.TabIndex = 2;
@@ -79,7 +87,7 @@
             // 
             // button_AddToZakaz
             // 
-            this.button_AddToZakaz.Location = new System.Drawing.Point(39, 170);
+            this.button_AddToZakaz.Location = new System.Drawing.Point(264, 173);
             this.button_AddToZakaz.Name = "button_AddToZakaz";
             this.button_AddToZakaz.Size = new System.Drawing.Size(105, 59);
             this.button_AddToZakaz.TabIndex = 5;
@@ -112,6 +120,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button_AddToZakaz;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
