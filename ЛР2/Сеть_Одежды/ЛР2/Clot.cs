@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace ЛР2
 {
-    public enum Clothes
+    public enum Vid_Clot
     {
-        sports_shiirt = 1,
-        trousers,
-        fur,
-        skirt
+        Badidas = 1,
+        Mike,
+        Moika_gobana,
+        Zuma,
+        Zalenciaga,
+        Atone_Zisland,
     }
 }

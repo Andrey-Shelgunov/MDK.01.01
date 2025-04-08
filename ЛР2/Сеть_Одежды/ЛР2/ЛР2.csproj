@@ -44,8 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clot.cs" />
-    <Compile Include="Clothe_Spisok.cs" />
-    <Compile Include="Prodaja.cs" />
+    <Compile Include="SaleList.cs" />
+    <Compile Include="Things.cs" />
+    <Compile Include="Sales.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
