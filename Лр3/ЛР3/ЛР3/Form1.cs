@@ -12,9 +12,9 @@ namespace ЛР3
 {
     public partial class Form1: Form
     {
-           Dictionary<string, List<string>> medicationGroups; // Словарь для хранения групп медикаментов и их списка 
+           Dictionary<string, List<string>> ClotsGroups; // Словарь для хранения групп медикаментов и их списка 
 
-            Dictionary<string, Dictionary<string, int>> medicationsSelected = new Dictionary<string, Dictionary<string, int>>();
+            Dictionary<string, Dictionary<string, int>> ClotsSelected = new Dictionary<string, Dictionary<string, int>>();
         // Словарь для хранения выбранных медикоментов и их количества
         public Form1()
         {
@@ -25,21 +25,21 @@ namespace ЛР3
 
         private void InitializeMedication()
         {
-            medicationGroups = new Dictionary<string, List<string>>
+            ClotsGroups = new Dictionary<string, List<string>>
             {
-                { "Обезболы", new List<string>{ "Морфин", "Немисил", "Какой-то обезбол" } },
-                { "От горла", new List<string>{ "пропосол", "фурацилин", "гексорал" } },
-                { "Остальное", new List<string>{ "уголь активированный", "уголь не активированный", "уголь неправильно активированный" } }
+                { "Футболки", new List<string>{ "Abibas", "Спортивная", "Без рукавов" } },
+                { "Ботинки", new List<string>{ "Туфли", "Кеды", "Кросовки" } },
+                { "Штаны", new List<string>{ "Джинсы", "Спортивные", "Брюки" } }
             };
 
-            foreach (var group in medicationGroups.Keys)
+            foreach (var group in ClotsGroups.Keys)
             {
-                medicationsSelected[group] = new Dictionary<string, int>();
+                ClotsSelected[group] = new Dictionary<string, int>();
             }
         }
         private void InitializeData()
         {
-            foreach (var group in medicationGroups.Keys)
+            foreach (var group in ClotsGroups.Keys)
             {
                 listBox_groups.Items.Add(group);
             }
@@ -53,14 +53,14 @@ namespace ЛР3
 
             string SelectedGroup = listBox_groups.SelectedItem.ToString();
 
-            foreach (var med in medicationGroups[SelectedGroup])
+            foreach (var med in ClotsGroups[SelectedGroup])
             {
                 CheckBox checkBox = new CheckBox { Text = med };
                 NumericUpDown numericUpDown = new NumericUpDown { Minimum = 0, Maximum = 100, Width = 50 };
 
-                if (medicationsSelected[SelectedGroup].ContainsKey(med))
+                if (ClotsSelected[SelectedGroup].ContainsKey(med))
                 {
-                    numericUpDown.Value = medicationsSelected[SelectedGroup][med];
+                    numericUpDown.Value = ClotsSelected[SelectedGroup][med];
                     checkBox.Checked = true;
                 }
                 // Обработчик изменения состояния CheckBox
@@ -68,11 +68,11 @@ namespace ЛР3
                 {
                     if (checkBox.Checked)
                     {
-                        medicationsSelected[SelectedGroup][med] = (int)numericUpDown.Value;
+                        ClotsSelected[SelectedGroup][med] = (int)numericUpDown.Value;
                     }
                     else
                     {
-                        medicationsSelected[SelectedGroup].Remove(med);
+                        ClotsSelected[SelectedGroup].Remove(med);
                     }
                 };
 
@@ -81,7 +81,7 @@ namespace ЛР3
                 {
                     if (checkBox.Checked)
                     {
-                        medicationsSelected[SelectedGroup][med] = (int)numericUpDown.Value;
+                        ClotsSelected[SelectedGroup][med] = (int)numericUpDown.Value;
                     }
                 };
 
@@ -94,12 +94,12 @@ namespace ЛР3
         private void button_AddToZakaz_Click(object sender, EventArgs e)
         {
             string order = "";
-            foreach (string group in medicationGroups.Keys)
+            foreach (string group in ClotsGroups.Keys)
             {
                 order += $"{group}:\n";
-                if (medicationsSelected[group].Count > 0)
+                if (ClotsSelected[group].Count > 0)
                 {
-                    foreach (var med in medicationsSelected[group])
+                    foreach (var med in ClotsSelected[group])
                     {
                         order += $"- {med.Key} x {med.Value}\n";
                     }
