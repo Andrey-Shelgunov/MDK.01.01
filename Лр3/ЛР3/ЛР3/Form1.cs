@@ -27,7 +27,7 @@ namespace ЛР3
         {
             ClotsGroups = new Dictionary<string, List<string>>
             {
-                { "Футболки", new List<string>{ "Abibas", "Спортивная", "Без рукавов" } },
+                { "Футболки", new List<string>{ "Abiиbas", "Спортивная", "Без рукавов" } },
                 { "Ботинки", new List<string>{ "Туфли", "Кеды", "Кросовки" } },
                 { "Штаны", new List<string>{ "Джинсы", "Спортивные", "Брюки" } }
             };
